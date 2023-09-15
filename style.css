@@ -65,6 +65,11 @@ body {
 
 .first-rating img, .second-rating img, .third-rating img{
     padding-right: 8px;
+    transition: transform 200ms ease-in-out;    
+}
+
+.first-rating img:hover, .second-rating img:hover, .third-rating img:hover{
+    transform: scale(1.2);
 }
 
 .second-rating {
@@ -102,14 +107,21 @@ body {
     width: 100em;
     height: 12em;
     padding: 20px;
+    border: 1px solid red;
+    margin: 10px;
+    transition: transform 200ms ease-in-out;
+}
+
+.first-card:hover, .second-card:hover, .third-card:hover {
+    transform: scale(1.05);
 }
 
 .second-card {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .third-card {
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .info {
