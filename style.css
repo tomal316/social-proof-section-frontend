@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan';
+    min-height: 100vh;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 60%;
+    width: 60%;
+    padding: 5em;
+    box-shadow: 0px 0px 300px 10px hsl(303, 10%, 53%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    width: 40%;
+    margin-top: 10px;
+}
+
+.left .header {
+    font-size: 3em;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    padding-bottom: 20px;
+    margin-right: 50px;
+}
+
+.description {
+    color: hsl(303, 10%, 53%);
+    font-size: 12px;
+    width: 25em;
+    line-height: 1.3em;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.first-rating, .second-rating, .third-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-rating img, .second-rating img, .third-rating img{
+    padding-right: 8px;
+}
+
+.second-rating {
+    margin-left: 50px;
+}
+
+.third-rating {
+    margin-left: 100px;
+}
+
+.first-rating span, .second-rating span, .third-rating span{
+    padding-left: 20px;
+    font-weight: 900;
+    color: hsl(300, 43%, 22%);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.cards img {
+    border-radius: 50%;
+    width: 12%;
+    margin-right: 10px;
+}
+
+.first-card, .second-card, .third-card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    width: 100em;
+    height: 12em;
+    padding: 20px;
+}
+
+.second-card {
+    margin-top: 20px;
+}
+
+.third-card {
+    margin-top: 40px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.identity .name {
+    margin-bottom: 2px;
+    color: aliceblue;
+}
+
+.job {
+    color: hsl(333, 80%, 67%);
+}
+
+.comments {
+    color: aliceblue;
+    line-height: 1.2em;
+    font-size: 1em;
+}
+
+@media (max-width: 767px) {
+    .main {
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        text-align: center;
+    }
+
+    .left .header {
+        font-size: 2em;
+        width: 15rem;
+        align-self: center;
+        margin-left: 50px;
+    }
+
+    .left .description {
+        width: 15rem;
+        line-height: 1.3em;
+        align-self: center;
+    }
+
+    .first-rating, .second-rating, .third-rating {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .second-rating {
+        margin-left: 0;
+    }
+    
+    .third-rating {
+        margin-left: 0;
+    }
+
+    .first-rating img, .second-rating img, .third-rating img{
+        width: 1.7em;
+    }
+
+    .first-rating span, .second-rating span, .third-rating span{
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 19rem;
+        gap: 5px;
+    }
+
+    .first-card, .second-card, .third-card {
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    .second-card {
+        margin-top: 0px;
+    }
+    
+    .third-card {
+        margin-top: 0px;
+    }
+}
